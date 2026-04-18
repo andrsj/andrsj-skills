@@ -22,6 +22,14 @@
         "repo": "andrsj/go-proverbs-review-skill"
       },
       "description": "A skill for reviewing Go code against Rob Pike's 19 Go Proverbs. Runs as a parallel fan-out of subagents, one per actionable proverb. Activates on explicit request or whenever the user asks to review .go files."
+    },
+    {
+      "name": "uber-go-styleguide",
+      "source": {
+        "source": "github",
+        "repo": "andrsj/uber-go-styleguide"
+      },
+      "description": "A skill for reviewing Go code against Uber's Go Style Guide — 59 rules across Guidelines, Performance, Style, Patterns, and Linting. Rule content is copied verbatim from uber-go/guide (Apache 2.0, pinned commit). Runs as a per-section parallel fan-out of 5 subagents. Explicit-only invocation."
     }
   ]
 }
