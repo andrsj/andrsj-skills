@@ -18,10 +18,20 @@ Then install any of the plugins below individually:
 /reload-plugins
 ```
 
-Keep everything current with:
+## Keeping up to date
 
 ```text
 /plugin marketplace update andrsj-skills
+/reload-plugins
+```
+
+Claude Code re-fetches plugin code only when the plugin's `plugin.json` `version` field has increased — so maintainers bump the version on every user-visible change, and `marketplace update` reports `(N plugins bumped)` when it actually pulls new content.
+
+To force a refresh regardless of version (e.g. during development, or to pin to latest `main` commit), uninstall and reinstall:
+
+```text
+/plugin uninstall <plugin>@andrsj-skills
+/plugin install <plugin>@andrsj-skills
 ```
 
 ## Plugins in this marketplace
