@@ -1,0 +1,27 @@
+{
+  "name": "andrsj-skills",
+  "owner": {
+    "name": "Andrii Derkach"
+  },
+  "metadata": {
+    "description": "Claude Code skill plugins by Andrii Derkach — Go review tooling and more"
+  },
+  "plugins": [
+    {
+      "name": "google-go-styleguide",
+      "source": {
+        "source": "github",
+        "repo": "andrsj/google-go-styleguide"
+      },
+      "description": "Three skills for reviewing Go code against Google's Go Style Guide framework (Style Guide, Style Decisions, Best Practices). Each runs as a parallel fan-out of subagents focused on one rule (or section) at a time. Explicit-only invocation."
+    },
+    {
+      "name": "go-proverbs-review",
+      "source": {
+        "source": "github",
+        "repo": "andrsj/go-proverbs-review-skill"
+      },
+      "description": "A skill for reviewing Go code against Rob Pike's 19 Go Proverbs. Runs as a parallel fan-out of subagents, one per actionable proverb. Activates on explicit request or whenever the user asks to review .go files."
+    }
+  ]
+}
