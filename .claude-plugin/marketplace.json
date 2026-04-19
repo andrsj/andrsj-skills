@@ -30,6 +30,14 @@
         "repo": "andrsj/uber-go-styleguide"
       },
       "description": "A skill for reviewing Go code against Uber's Go Style Guide — 59 rules across Guidelines, Performance, Style, Patterns, and Linting. Rule content is copied verbatim from uber-go/guide (Apache 2.0, pinned commit). Runs as a per-section parallel fan-out of 5 subagents. Explicit-only invocation."
+    },
+    {
+      "name": "validation-architecture-review",
+      "source": {
+        "source": "github",
+        "repo": "andrsj/validation-architecture-skill"
+      },
+      "description": "An opinionated skill for reviewing Go code against validation best practices in clean / onion / hexagonal architecture. 7 rules (5 actionable, 1 tooling, 1 philosophical) covering layer placement, value objects, struct separation, error kinds, cross-aggregate rules, schema wiring, and defence-in-depth. Parallel per-rule subagent fan-out. Explicit-only invocation; review-only (never applies fixes)."
     }
   ]
 }

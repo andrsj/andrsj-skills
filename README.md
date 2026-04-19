@@ -41,6 +41,7 @@ To force a refresh regardless of version (e.g. during development, or to pin to 
 | `google-go-styleguide` | [andrsj/google-go-styleguide](https://github.com/andrsj/google-go-styleguide) | Three skills that review Go code against Google's Go Style Guide framework (Style Guide, Style Decisions, Best Practices). Parallel per-rule subagent fan-out. Explicit-only. |
 | `go-proverbs-review` | [andrsj/go-proverbs-review-skill](https://github.com/andrsj/go-proverbs-review-skill) | Reviews Go code against Rob Pike's 19 Go Proverbs. Parallel per-proverb subagent fan-out. Activates on explicit request or whenever `.go` files are reviewed. |
 | `uber-go-styleguide` | [andrsj/uber-go-styleguide](https://github.com/andrsj/uber-go-styleguide) | Reviews Go code against Uber's Go Style Guide (59 rules: Guidelines, Performance, Style, Patterns, Linting). Per-section subagent fan-out. Rule content copied verbatim from uber-go/guide under Apache 2.0. Explicit-only. |
+| `validation-architecture-review` | [andrsj/validation-architecture-skill](https://github.com/andrsj/validation-architecture-skill) | Reviews Go code against opinionated validation best practices in clean / onion / hexagonal architecture (7 rules: layer placement, value objects, struct separation, error kinds, cross-aggregate rules, schema wiring, defence-in-depth). Per-rule subagent fan-out. Explicit-only; review-only. |
 
 ## Why a separate hub repo
 
